@@ -10,10 +10,15 @@ Dado que eu acesse a página de autenticação do ebac-shop
 
 Cenário: Autenticação com sucesso
 Quando eu digitar "patriciadias@ebacshop.com.br"
-e senha "abc,123"
+E senha "abc,123"
 Então devo ser direcionado para a tela de checkout
 
-Cenário: Autenticação sem sucesso com senha inválida 
-Quando eu digitar "patriciadias@ebacshop.com.br"
-e senha "abc,456"
-Então deve ser exibido um alerta "Usuário ou senha inválidos"
+Cenário: Autenticação sem sucesso 
+Quando eu digitar <usuario>
+E a <senha>
+Então deve ser exibido um <alerta>
+
+Exemplos:
+| usuario                      | senha   | alerta           |
+| patriciadias@br              | abc,123 | usuário inválido | 
+| patriciadias@ebacshop.com.br | abc,456 | senha inválida   |
