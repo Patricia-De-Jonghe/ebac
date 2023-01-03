@@ -15,7 +15,7 @@ Então devo ser direcionado para a tela de checkout
 
 Cenário: Não devo me autenticar com usuário e senha inválidos 
 Quando eu inserir <usuario> e <senha>
-Então deve ser exibido um alerta com a <mesagem>
+Então deve ser exibida a <mensagem> no alerta
 
 Exemplos:
 | usuario                        | senha     | mensagem                     |
