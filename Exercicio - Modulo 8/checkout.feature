@@ -18,7 +18,7 @@ Então devo ver o alerta "Preencher campos obrigatórios"
 
 Cenário: Não devo realizar o cadastro com e-mail inválido
 Quando eu inserir <endereco_email> e e-mail inválido 
-Então devo ver <mesagem> no alerta
+Então devo ver <mensagem> no alerta
 
 Exemplos:
 | nome       | sobrenome | nome da empresa | pais1    | endereco                | cidade           | pais2    | cep        | telefone     | endereço de e-mail | mensagem          |
