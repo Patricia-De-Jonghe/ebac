@@ -21,5 +21,5 @@ Quando eu inserir <endereco_email> e e-mail inválido
 Então devo ver <mensagem> no alerta
 
 Exemplos:
-| nome       | sobrenome | nome da empresa | pais1    | endereco                | cidade           | pais2    | cep        | telefone     | endereço de e-mail | mensagem          |
-| "Patricia" | "Dias"    | "Unimed"        | "Brasil" | "Rua da alfândega, 100" | "Rio de janeiro" | "Brasil" | "22000000" | "2199999999" | "patriciadias@r    | "E-mail inválido" |
+| nome       | sobrenome | nome da empresa | pais1    | endereco                | cidade           | pais2    | cep        | telefone     | endereço_email  | mensagem          |
+| "Patricia" | "Dias"    | "Unimed"        | "Brasil" | "Rua da alfândega, 100" | "Rio de janeiro" | "Brasil" | "22000000" | "2199999999" | "patriciadias@r | "E-mail inválido" |
