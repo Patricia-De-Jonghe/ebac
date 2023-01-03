@@ -8,17 +8,16 @@ Para visualizar meus pedidos
 Contexto: 
 Dado que eu acesse a página de autenticação do ebac-shop
 
-Cenário: Autenticação com sucesso
-Quando eu digitar "patriciadias@ebacshop.com.br"
-E senha "abc,123"
+Cenário: Devo me autenticar com sucesso
+Quando eu inserir o usuário "patriciadias@ebacshop.com.br"
+E a senha "abc,123"
 Então devo ser direcionado para a tela de checkout
 
-Cenário: Autenticação sem sucesso 
-Quando eu digitar <usuario>
-E a <senha>
-Então deve ser exibido um <alerta>
+Cenário: Não devo me autenticar com usuário e senha inválidos 
+Quando eu inserir <usuario> e <senha>
+Então deve ser exibido um alerta com a <mesagem>
 
 Exemplos:
-| usuario                      | senha   | alerta           |
-| patriciadias@br              | abc,123 | usuário inválido | 
-| patriciadias@ebacshop.com.br | abc,456 | senha inválida   |
+| usuario                        | senha     | mensagem                     |
+| "patriciadias@"                | "abc,123" | "Usuário ou senha inválidos" |
+| "patriciadias@ebacshop.com.br" | "abc,000" | "Usuário ou senha inválidos" |
